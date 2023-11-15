@@ -6,7 +6,7 @@ import $ from 'cash-dom';
 function Summary(_props) {
   return (
     <div className="mt-4 mb-0">
-      <p>Cart Summary</p>
+      <p>Cart Total: $75.33</p>
     </div>
   );
 }
