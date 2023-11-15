@@ -42,3 +42,20 @@ liveSocket.connect();
 // >> liveSocket.disableLatencySim()
 window.liveSocket = liveSocket;
 
+
+import $ from 'cash-dom';
+
+import store from './store';
+
+$(() => {
+  document.getElementById("add-10-shirts")
+    .addEventListener("click", (ev) => {
+      ev.preventDefault();
+
+      let data = {
+        item_id: 1,
+        change: +10,
+      }
+      store.dispatch({type: 'counts/change', data: data});
+    });
+});
